@@ -1,0 +1,62 @@
+#!/usr/bin/python3
+
+#Se abre el fichero con el que queremos trabajar. Por defecto en modo lectura
+#Modos: r, t (por defecto), w (lo elimina si existe), x (falla si existe), a (añade si existe y lo crea si no), b, + (lectura y escritura)
+try:
+    quijote = open('quijote.txt', 'rt')
+    piratas = open('quijote.txt')
+    #El método read() lee el fichero completo
+    print(quijote.read())
+    texto = piratas.read()
+    print(texto)
+    #No olvidar nunca cerrar el fichero después de su uso
+    quijote.close()
+    piratas.close()
+
+    # así leemos línea a línea hasta el final del fichero
+    quijote = open('quijote.txt')
+    linea=quijote.readline()
+    while linea !="":
+        print(linea, end="")
+        linea = quijote.readline()
+    quijote.close()
+
+    # así también funciona:
+    quijote = open('quijote.txt')
+    print("NUEVO, NUEVO")
+    for linea in quijote:
+        print(linea[:-1]) # para eliminar el \n
+    quijote.close()
+
+    quijote = open('quijote.txt')
+    caracter=quijote.readline(1)
+    while caracter !="":
+        print(caracter)
+        caracter=quijote.readline(1)
+    quijote.close()
+
+    quijote = open('quijote.txt')
+    caracter=quijote.readline(3)
+    while caracter !="":
+        print(caracter)
+        caracter=quijote.readline(3)
+    quijote.close()
+
+    quijote = open('quijote.txt')
+    lista_lineas=quijote.readlines()
+    print(lista_lineas)
+    quijote.close()
+
+    with open("fquijote.txt") as cursor:
+        lista = cursor.readLines()
+        print(lista)
+
+except:
+    print("Error")
+
+try:
+    quijote = open('quijotemalescrito.txt')
+except:
+    print("No puedo abrir el fichero")
+else:
+    quijote.close()
