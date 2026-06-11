@@ -66,3 +66,30 @@ try:
 except mysql.connector.Error as err:
     print(err)
 
+# pero en las versiones modernas del conector ya no hace falta
+try:
+    with (mysql.connector.connect(user='josemaria', password='abc123', host='localhost', database='pokemondb')) as connect:
+        with closing(connect.cursor()) as cursor:
+            sql = ("SELECT nombre, peso, altura from pokemon")
+            cursor.execute(sql)
+            tupla = cursor.fetchall()
+            print(tupla)
+except mysql.connector.Error as err:
+    print(err)
+
+# cuando busco un elemento por su clave primaria y es único puedo usar fetchone
+try:
+    with (mysql.connector.connect(user='josemaria', password='abc123', host='localhost', database='pokemondb')) as connect:
+        with closing(connect.cursor()) as cursor:
+            sql = ("SELECT nombre from pokemon WHERE numero_pokedex = 2") # prueba con 222
+            cursor.execute(sql)
+            resultado = cursor.fetchone()
+            if resultado!=None:
+                print(resultado)
+            else:
+                print("El pokemon no existe")
+except mysql.connector.Error as err:
+    print(err)
+
+
+# completar con un ejemplo de uso de fetchone
