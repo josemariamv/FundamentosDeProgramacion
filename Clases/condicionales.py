@@ -21,7 +21,7 @@ else:
 
 if letra !="E":
     print("No es una E")
-    print("Puede se cualquier otra cosa")
+    print("Puede ser cualquier otra cosa")
 
 # como en cualquier bloque, si queremos dejarlo sin contenido podemos usar pass
 
