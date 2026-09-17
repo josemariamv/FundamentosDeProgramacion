@@ -28,8 +28,13 @@ MESES_DEL_ANNO = 11
 # las asignaciones siempre tienen la menor prioridad en una instrucción
 # y siempre se asigna de izquierda a derecha y nunca al revés
 edad = edad + 1
-edad+=1
 print(edad)
+
+# Los operadores de autoincremento y autodecremento no existen
+#edad++
+
+# el formato compacto cuando la misma variable está involucrada a derecha e izquierda del signo igual si
+edad+=1
 
 print(5/2)
 print(5%2)
@@ -42,6 +47,12 @@ print(potencia)
 # también así
 print(4**2)
 
+# para la raiz necesitamos usar una función, como en java:
+import math
+numero = 49
+raiz = math.sqrt(numero)
+print(raiz)
+
 #El operador + está sobrecargado para sumar cadenas
 texto = "hola" + " " + "mundo"
 print(texto)
@@ -49,7 +60,3 @@ print(texto)
 #El método print también es mas potente que en java
 print("hola", "mundo", "-", potencia)
 
-# hablaremos mas de print. Por ahora solo saber que tiene dos parámetros por defecto: end="\n" y sep=' '
-print("hola", "mundo", "-", potencia, end="")
-print("hola", "mundo", potencia, sep=" - ")
-edad = input("Dime tu edad")
