@@ -33,7 +33,7 @@ print(edad)
 
 print(5/2)
 print(5%2)
-# este no lo hay en java
+# este no lo hay en java. Nos da el cociente de la division entera
 print(5//2)
 
 #algunos operadores que no existen en java
@@ -41,16 +41,6 @@ potencia = 4 ** 2
 print(potencia)
 # también así
 print(4**2)
-
-# convirtiendo entre tipos
-precio_truncado = int(precio)
-print(precio_truncado)
-
-print(type(precio))
-print(type(precio_truncado))
-
-edad_con_decimales = float(edad)
-print(edad_con_decimales)
 
 #El operador + está sobrecargado para sumar cadenas
 texto = "hola" + " " + "mundo"
@@ -61,5 +51,5 @@ print("hola", "mundo", "-", potencia)
 
 # hablaremos mas de print. Por ahora solo saber que tiene dos parámetros por defecto: end="\n" y sep=' '
 print("hola", "mundo", "-", potencia, end="")
-print("\nhola", "mundo", potencia, sep=" - ")
+print("hola", "mundo", potencia, sep=" - ")
 edad = input("Dime tu edad")
