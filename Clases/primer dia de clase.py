@@ -56,7 +56,14 @@ print(raiz)
 #El operador + está sobrecargado para sumar cadenas
 texto = "hola" + " " + "mundo"
 print(texto)
+# Tamién hay otros operadores sobrecargados... Algunos son utiles y otros no:
+separador = "=" * 30
+print(separador)
 
-#El método print también es mas potente que en java
-print("hola", "mundo", "-", potencia)
+# El método print permite varios elementos separados por comas.
+# Los muestra todos ellos usando un espacio en blanco como separador
+# Ya veremos que es mucho mas flexible
+nombre = "José María"
+edad = 57
+print("Hola mundo. Me llamo", nombre, "y tengo", edad, "años")
 
