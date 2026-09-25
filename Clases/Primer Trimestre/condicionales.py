@@ -16,7 +16,7 @@ if letra in "UOIAE":
 else:
     print("No es una vocal mayúscula")
 
-# debajo del if (o del else) abrimos un bloque (con tabulado) y debe de haber una instrucción mínimo
+# debajo del if (o del else) abrimos un bloque iniciado con el símbolo : y con tabulado y debe de haber una instrucción mínimo
 # pero puede haber tantas como queramos
 
 if letra !="E":
