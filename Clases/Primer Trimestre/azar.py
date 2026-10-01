@@ -14,3 +14,5 @@ print(dado)
 print(random.uniform(0.5,0.75))
 # o también
 print(random.uniform(5,7))
+
+# veremos mas funciones útiles relacionadas con esto mas adelante, cuando veamos otras estructuras de datos apropiadas
