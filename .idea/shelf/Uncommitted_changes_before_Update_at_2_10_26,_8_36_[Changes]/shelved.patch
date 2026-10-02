@@ -1,0 +1,115 @@
+Index: main.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># This is a sample Python script.\n\n# Press Mayús+F10 to execute it or replace it with your code.\n# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.\n\n\ndef print_hi(name):\n    # Use a breakpoint in the code line below to debug your script.\n    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.\n\n\n# Press the green button in the gutter to run the script.\nif __name__ == '__main__':\n    print_hi('PyCharm')\n\n# See PyCharm help at https://www.jetbrains.com/help/pycharm/\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/main.py b/main.py
+--- a/main.py	(revision bdf6c816b514c09ad5f05234cfb84899ead6ed0e)
++++ b/main.py	(date 1790320025891)
+@@ -12,5 +12,6 @@
+ # Press the green button in the gutter to run the script.
+ if __name__ == '__main__':
+     print_hi('PyCharm')
++    print("A" in "EIOAU")
+ 
+ # See PyCharm help at https://www.jetbrains.com/help/pycharm/
+Index: .idea/inspectionProfiles/profiles_settings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/inspectionProfiles/profiles_settings.xml b/.idea/inspectionProfiles/profiles_settings.xml
+new file mode 100644
+--- /dev/null	(date 1789716893218)
++++ b/.idea/inspectionProfiles/profiles_settings.xml	(date 1789716893218)
+@@ -0,0 +1,6 @@
++<component name="InspectionProjectProfileManager">
++  <settings>
++    <option name="USE_PROJECT_PROFILE" value="false" />
++    <version value="1.0" />
++  </settings>
++</component>
+\ No newline at end of file
+Index: .idea/FundamentosDeProgramacion.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/FundamentosDeProgramacion.iml b/.idea/FundamentosDeProgramacion.iml
+new file mode 100644
+--- /dev/null	(date 1789716893246)
++++ b/.idea/FundamentosDeProgramacion.iml	(date 1789716893246)
+@@ -0,0 +1,16 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="PYTHON_MODULE" version="4">
++  <component name="NewModuleRootManager">
++    <content url="file://$MODULE_DIR$">
++      <excludeFolder url="file://$MODULE_DIR$/.venv" />
++    </content>
++    <orderEntry type="jdk" jdkName="~/PycharmProjects/FundamentosDeProgramacion/.venv" jdkType="Python SDK" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++  <component name="PackageRequirementsSettings" />
++  <component name="PyDocumentationSettings">
++    <option name="format" value="PLAIN" />
++  </component>
++  <component name="ReSTService" />
++  <component name="TestRunnerService" />
++</module>
+\ No newline at end of file
+Index: .idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+new file mode 100644
+--- /dev/null	(date 1789716893292)
++++ b/.idea/modules.xml	(date 1789716893292)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/.idea/FundamentosDeProgramacion.iml" filepath="$PROJECT_DIR$/.idea/FundamentosDeProgramacion.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1789716893365)
++++ b/.idea/vcs.xml	(date 1789716893365)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"Black\">\n    <option name=\"sdkName\" value=\"Python 3.12 (Optativa)\" />\n  </component>\n  <component name=\"ProjectRootManager\" version=\"2\" project-jdk-name=\"Python 3.12 (Optativa)\" project-jdk-type=\"Python SDK\" />\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision bdf6c816b514c09ad5f05234cfb84899ead6ed0e)
++++ b/.idea/misc.xml	(date 1789716893421)
+@@ -3,5 +3,5 @@
+   <component name="Black">
+     <option name="sdkName" value="Python 3.12 (Optativa)" />
+   </component>
+-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.12 (Optativa)" project-jdk-type="Python SDK" />
++  <component name="ProjectRootManager" version="2" project-jdk-name="~/PycharmProjects/FundamentosDeProgramacion/.venv" project-jdk-type="Python SDK" />
+ </project>
+\ No newline at end of file
