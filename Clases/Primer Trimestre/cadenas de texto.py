@@ -1,91 +1,133 @@
-print(len("Hola mundo!"))
+# Tenemos que ser precavidos con cuando usar el signo + y la coma
+# Dentro de un print funciona cualquiera de ambas
+# aunque de forma ligeramente diferente. El signo + concatena cadenas tal cual
+# mientras que la coma introduce un separador que, por defecto, es un espacio en blanco
+print("Esto", "es", "un mensaje")
+print("Esto" + "es" + "un mensaje")
 
-#Precaución con:
-cadena1 = "Estoy concatenando" + " cadenas " + "una detrás de otra"
-print(cadena1)
+# Fuera de un print, en una asignación, el signo + funciona igual que dentro de un print
+texto = "Esto" + "es" + "un mensaje"
+print(texto)
 
-# esto no funciona. lo usamos como argumentos de print, pero no aquí
-#cadena1 = "Estoy concatenando" , "3", "cadenas" , "una detrás de otra"
+# pero la coma no hace lo que tu te piensas fuera del print.
+# no concatena textos: forma una lista.
+# ya veremos que es esto mas adelante cuando veamos estructuras complejas de datos
+texto = "Esto", "es", "un mensaje"
+print (texto)
 
-# esto tampoco funciona. python no concatena números y textos como hace java
-#cadena1 = "Estoy concatenando" + 3 + "cadenas" + "una detrás de otra"
-
-# esto funciona, pero no deja espacios entre el texto y el 3
+# Esto da error. Python no concatena números y textos como hace java
+# cadena1 = "Estoy concatenando" + 3 + "cadenas" + "una detrás de otra"
+# Tenemos que convertir a string el número para que funcione:
 cadena1 = "Estoy concatenando " + str(3) + " cadenas" + " una detrás de otra"
 print(cadena1)
 
-# todas estas son válidas
-print("Estoy concatenando" + " cadenas " + "una detrás de otra")
-print("Estoy concatenando" , "cadenas" , "una detrás de otra")
-print("Estoy concatenando" , 3, "cadenas" , "una detrás de otra")
+# Sin embargo en un print con comas si que puedo hacerlo:
+print("Estoy concatenando", 3, "cadenas", "una detrás de otra")
 
-#bocadillos, rebanados o slicing
-print("Hola mundo!"[0])
-print("Hola mundo!"[-1])
-print("Hola mundo!"[2:5])
-print("Hola mundo!"[2:-5])
-print("Hola mundo!"[:6])
-print("Hola mundo!"[2:])
-#hay un tercer parámentro
-print("Hola mundo!"[::2])
+# Podemos hacer referencia a un caracter cualquiera de una cadena poniendo su posición con esta sintaxis:
+texto = "Hola Mundo Cruel"
+print(texto[2])
+# Lo anterior muestra el caracter número 2 de la cadena que es la l
+# recuerda que la primera posición es la 0
 
-cadena = "Hola mundo!"
-print(cadena)
-#dar la vuelta a una cadena con los rebanados
-print(cadena[::-1])
+# Si el número es negativo empezamos por el final. La posición -1 es la última. Lo siguiente muestra la e
+print(texto[-2])
 
-texto = "Hola mundo cruel"
-# esto no funciona. No se puede modificar una cadena directamente. como en Java
-#texto[0] = "X"
+# Los slices, rebanadas o bocadillos son uno de los elementos mas útiles de las cadenas de python
+# Cuando ponemos dos números extrae la subcadena entre la posición del primer número, incluida
+# y la del segundo no incluida. Lo siguiente mostraría las posiciones entre la 2 y la 4
+print(texto[2:5])
+# Si cualquiera de ambos números es negativo busca la posición por detrás.
+print(texto[2:-5])
+# Si omitimos el primer número considera que es el 0
+print(texto[:6])
+# Si omitimos el segundo, llega hasta el final de la cadena
+print(texto[2:])
+# Podemos incluir un tercer parámetro. Un paso. Lo siguiente imprime las posiciones pares de la cadena
+print(texto[::2])
+# Y lo siguiente las impares
+print(texto[1::2])
+# cuando el paso es negativo va restando posiciones.
+# Además, si el paso es positivo y omitimos el primer parámetro considera que es desde el final
+# y si omitimos el segundo, hasta el principio. Así, lo siguiente muestra el texto al revés
+print(texto[::-1])
 
-# Dos formas de recorrer una cadena
+# La función len devuelve la longitud de la cadena.
+print(len("Hola mundo!"))
+
+# esto da error. No se puede modificar una cadena directamente
+# texto[0] = "X"
+
+# Vamos a ver ahora formas de recorrer una cadena caracter a caracter. La más fácil es esta:
 for caracter in texto:
     print(caracter)
 
-# O así:
-for i in range(0,len(texto)):
+# O También podemos usar range. Mejora sobre el anterior que tenemos la posición del caracter y el caracter en si
+for i in range(len(texto)):
     print(i, " - ", texto[i])
 
-# La segunda es mas versatil porque me permite recorrerla al revés, a saltos, etc.
+# Además, me permite jugar con los tres parámetros que tiene el range (inicio, fin y paso) que son muy parecidos a
+# los de los slices. Repasa el tema de bucles si no te acuerdas
+# Lo siguiente recorre la cadena al revés:
 for i in range(len(texto)-1, -1, -1):
     print(i, " - ", texto[i])
 
-# También podemos recorrerla conociendo el caracter y la posición de esta forma:
-# pero no lo vamos a entender bien todavía, verdad?
+# Tenemos aún otra forma, pero ya la estudiaremos mas adelante:
 for i, letra in enumerate(texto):
     print("***", i, " - ", letra)
 
 # Algunos métodos interesantes
+# Los siguientes devuelven la cadena toda con mayúsculas, toda con minúsculas o inviritendo ambas
 print(texto.upper())
 print(texto.lower())
 print(texto.swapcase())
+# Ninguna de estas funciones modifica la cadena original. Solo me devuelven una nueva cadena. Si quiero
+# modificar la original tengo que reasignarla
+texto = texto.upper()
 
-print(texto.find("m"))
+# find encuentra la primera posición donde se encuentra la subcadena indicada
 print(texto.find("M"))
-# dos parámetros start y end, aunque puede usarse con bocadillos como cualquier otro método
-print(texto.find("o"))
-print(texto.find("o", 8, 11))
-# pero cuidado que la posición que devuelve así es diferente!
-print(texto[8:11].find("o"))
+print(texto.find("UND"))
 
-print(texto.count("o"))
+# Si no la encuentra devuelve -1
+print(texto.find("x"))
 
-# el tercer parámetro indica el número de reemplazos máximo
-print(texto.replace("o", "x"))
-print(texto.replace("o", "x", 1))
+# Podemos añadir dos parámetros start y end para buscar en una porción de la cadena
+print(texto.find("O", 8))
+print(texto.find("O", 8,len(texto)-1))
 
-#La cadena original no se ha alterado
+# count devuelve el número de veces que aparece la subcadena
+print(texto.count("O"))
+
+# replace sustituye todas las ocurrencias del primer argumento por el segundo
+print(texto.replace("O", "***"))
+print(texto.replace("OL", "*"))
+print(texto.replace(" ", "-"))
+
+# Podemos añadir un tercer parámetro con el número máximo de sustituciones a realizar
+print(texto.replace("O", "xxx", 1))
+
+#La cadena original sigue sin alterarse, recuérdalo!
 print(texto)
 
 # zfill llena con ceros a la izquierda hasta completar el tamaño que se pasa como argumento
 # Útil para formatear números
-codigo = "345"
+codigo = "1345"
 codigo = codigo.zfill(10)
 print(codigo)
 
-# y el trim
+# si el número es igual o inferior al tamaño de la cadena no hace nada
+codigo = codigo.zfill(3)
+print(codigo)
+
+# Por último, strip elimina los espacios en blanco a derecha e izquierda de la cadena
 texto = "       Hola  mundo    "
 print(texto.strip() + ".")
+
+# rstrip elimina solo los espacios por la derecha y ltrip por la izquierda
 print(texto.rstrip() + ".")
 print(texto.lstrip() + ".")
+
+# existen muchas otras funciones útiles de cadenas. Estos son solo unos ejemplos. Si descubres otras
+# que te parecen útiles y no hemos visto compártelas con el resto de alumnos/as
 
