@@ -1,22 +1,29 @@
 print(len("Hola mundo!"))
 
 #Precaución con:
-cadena1 = "Estoy concatenando" + "cadenas" + "una detrás de otra"
-#cadena1 = "Estoy concatenando" , "cadenas" , "una detrás de otra"
-#cadena1 = "Estoy concatenando" + 3 + "cadenas" + "una detrás de otra"
-#cadena1 = "Estoy concatenando" + str(3) + "cadenas" + "una detrás de otra"
-##cadena1 = "Estoy concatenando" ,3, "cadenas" , "una detrás de otra"
+cadena1 = "Estoy concatenando" + " cadenas " + "una detrás de otra"
 print(cadena1)
 
-print("Estoy concatenando" + "cadenas" + "una detrás de otra")
+# esto no funciona. lo usamos como argumentos de print, pero no aquí
+#cadena1 = "Estoy concatenando" , "3", "cadenas" , "una detrás de otra"
+
+# esto tampoco funciona. python no concatena números y textos como hace java
+#cadena1 = "Estoy concatenando" + 3 + "cadenas" + "una detrás de otra"
+
+# esto funciona, pero no deja espacios entre el texto y el 3
+cadena1 = "Estoy concatenando " + str(3) + " cadenas" + " una detrás de otra"
+print(cadena1)
+
+# todas estas son válidas
+print("Estoy concatenando" + " cadenas " + "una detrás de otra")
 print("Estoy concatenando" , "cadenas" , "una detrás de otra")
 print("Estoy concatenando" , 3, "cadenas" , "una detrás de otra")
 
 #bocadillos, rebanados o slicing
 print("Hola mundo!"[0])
 print("Hola mundo!"[-1])
-print("Hola mundo!"[2:6])
-print("Hola mundo!"[2:6])
+print("Hola mundo!"[2:5])
+print("Hola mundo!"[2:-5])
 print("Hola mundo!"[:6])
 print("Hola mundo!"[2:])
 #hay un tercer parámentro
@@ -28,15 +35,12 @@ print(cadena)
 print(cadena[::-1])
 
 texto = "Hola mundo cruel"
+# esto no funciona. No se puede modificar una cadena directamente. como en Java
 #texto[0] = "X"
 
 # Dos formas de recorrer una cadena
 for caracter in texto:
     print(caracter)
-
-# También podemos recorrerla conociendo el caracter y la posición de esta forma:
-for i, letra in enumerate(texto):
-    print("***", i, " - ", letra)
 
 # O así:
 for i in range(0,len(texto)):
@@ -46,11 +50,10 @@ for i in range(0,len(texto)):
 for i in range(len(texto)-1, -1, -1):
     print(i, " - ", texto[i])
 
-# convertir un número en string
-textoNumerico = str(55)
-print(textoNumerico + "€")
-textoNumerico2 = str(135.69)
-print(textoNumerico2 + "€")
+# También podemos recorrerla conociendo el caracter y la posición de esta forma:
+# pero no lo vamos a entender bien todavía, verdad?
+for i, letra in enumerate(texto):
+    print("***", i, " - ", letra)
 
 # Algunos métodos interesantes
 print(texto.upper())
@@ -76,8 +79,13 @@ print(texto)
 
 # zfill llena con ceros a la izquierda hasta completar el tamaño que se pasa como argumento
 # Útil para formatear números
-
 codigo = "345"
 codigo = codigo.zfill(10)
 print(codigo)
+
+# y el trim
+texto = "       Hola  mundo    "
+print(texto.strip() + ".")
+print(texto.rstrip() + ".")
+print(texto.lstrip() + ".")
 
