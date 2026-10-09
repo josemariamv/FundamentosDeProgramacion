@@ -7,6 +7,8 @@ edad = 55
 edad_con_decimales = float(edad)
 print(edad_con_decimales)
 
+#redondeo y truncado de decimales
+
 # Convertir entre tipos numéricos y textos
 texto = str(precio)
 texto2 = str(precio_truncado)
