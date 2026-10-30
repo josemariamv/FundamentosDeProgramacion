@@ -1,3 +1,5 @@
+# hablar de end y sep
+
 # print con variables
 nombre = "José María"
 edad = 57
