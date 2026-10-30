@@ -36,12 +36,6 @@ print(f"Centrado: ***{texto:^20}***")
 # debug
 print(f"{num1=}, {num2=}")
 
-# llamando a funciones
-def autor():
-    return "Vargas Llosa"
-
-print(f"Hola Python, dime el autor del libro: {autor()}")
-
 # f-string en varias líneas. Usamos las triples comillas dobles
 nombre = "Alicia"
 cargo = "Profesora"
@@ -59,6 +53,18 @@ print(ficha)
 nombre = "Python"
 print(f"{{ Estoy estudiando: {nombre} }}")
 
+# Las fstring se pueden usar también para crear cadenas y no solo para mostrarlas
+cadena = f"La población del país es de: {poblacion:,} habitantes"
+print(cadena)
+
+##### ESTO LO DAREMOS MAS ADELANTE.....
+
+# llamando a funciones
+def autor():
+    return "Vargas Llosa"
+
+print(f"Hola Python, dime el autor del libro: {autor()}")
+
 # condicionales
 print(f"¿num1 es par? {True if num1 %2 == 0 else False}")
 
@@ -68,6 +74,3 @@ print(f"Resultado: {'Aprobado' if puntuacion >= 50 else 'Suspenso'}")
 valor = 42
 print(f"Valor: {'Alto' if valor > 75 else 'Medio' if valor > 25 else 'Bajo'}")
 
-# Las fstring se pueden usar también para crear cadenas y no solo para mostrarlas
-cadena = f"Hola Python, dime el autor del libro: {autor()}"
-print(cadena)
