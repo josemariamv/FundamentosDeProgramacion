@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
+    <list default="true" id="76506e00-d99f-4317-97cd-2871a2477ce5" name="Changes" comment="pequeños  cambios en fstring">
+      <change beforePath="$PROJECT_DIR$/.idea/Optativa.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Optativa.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clases/fstrings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Clases/fstrings.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,43 +26,120 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/josemariamv/FundamentosDeProgramacion.git&quot;,
+    &quot;accountId&quot;: &quot;1ab88c0c-43e6-4432-b95e-483e39da8aaa&quot;
   }
 }</component>
-  </component>
   <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2,
+  &quot;fromUser&quot;: false
 }</component>
+  <component name="ProjectId" id="3KRjpKnjI35dymRXxChS0z2Dxc9" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.conversiones.executor": "Run",
+    "Python.fstrings.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "master",
+    "junie.onboarding.icon.badge.shown": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "python.packages.toolwindow.project.migrated.to.right.top.v2": "true",
+    "to.speed.mode.migration.done": "true"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Clases/Tercer Trimestre" />
+      <recent name="$PROJECT_DIR$/Clases" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
+        <option value="bundled-python-sdk-73a66231627c-5bd6d13a2a75-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-262.10968.92" />
       </set>
     </attachedChunks>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+      <changelist id="76506e00-d99f-4317-97cd-2871a2477ce5" name="Changes" comment="cambios" />
+      <created>1791527466104</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
+      <updated>1791527466104</updated>
+      <workItem from="1791527470374" duration="17000" />
     </task>
+    <task id="LOCAL-00001" summary="cambios">
       <option name="closed" value="true" />
+      <created>1791527666391</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
+      <updated>1791527666391</updated>
     </task>
+    <task id="LOCAL-00002" summary="cambios">
+      <option name="closed" value="true" />
+      <created>1792140582307</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1792140582307</updated>
+    </task>
+    <task id="LOCAL-00003" summary="estructuración por trimestre">
+      <option name="closed" value="true" />
+      <created>1792742758395</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1792742758396</updated>
+    </task>
+    <task id="LOCAL-00004" summary="pequeños  cambios en fstring">
+      <option name="closed" value="true" />
+      <created>1793345091900</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1793345091900</updated>
+    </task>
+    <task id="LOCAL-00005" summary="pequeños  cambios en fstring">
+      <option name="closed" value="true" />
+      <created>1793350257562</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1793350257562</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
-  <component name="VcsManagerConfiguration">
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="cambios" />
+    <MESSAGE value="estructuración por trimestre" />
+    <MESSAGE value="pequeños  cambios en fstring" />
+    <option name="LAST_COMMIT_MESSAGE" value="pequeños  cambios en fstring" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/FundamentosDeProgramacion$introduccion.coverage" NAME="introduccion Coverage Results" MODIFIED="1789036762631" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/FundamentosDeProgramacion$conversiones.coverage" NAME="conversiones Coverage Results" MODIFIED="1790925952112" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Clases/Primer Trimestre" />
+    <SUITE FILE_PATH="coverage/FundamentosDeProgramacion$primer_dia_de_clase.coverage" NAME="primer dia de clase Coverage Results" MODIFIED="1789717590379" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Clases" />
+    <SUITE FILE_PATH="coverage/FundamentosDeProgramacion$main.coverage" NAME="main Coverage Results" MODIFIED="1790925790840" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
