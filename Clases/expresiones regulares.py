@@ -42,7 +42,7 @@ else:
 # Las expresiones regulares siguen las mismas reglas que en cualquier otro
 # lenguaje. Veamos algunos ejemplos
 
-if re.fullmatch(r"[0-9]{8}[A-Z]", "28999777X"):
+if re.fullmatch(r"[0-9]{8}[A-Za-z]", "28999777X"):
     print("Es un DNI válido")
 else:
     print("No es un DNI válido")
@@ -78,3 +78,26 @@ if re.fullmatch(r"(?!HO)[A-Z]{2}", "XO"):
     print("Cadena de dos caracteres en mayúsculas que no sean HO")
 else:
     print("No son dos caracteres en mayúsculas o es HO")
+
+'''
+OTROS PATRONES ÚTILES:
+
+Entero	                        -?\d+
+Decimal	                        -?\d+(?:[.,]\d+)?
+Código postal (ES)	            \d{5}
+Teléfono móvil (ES)	            [67]\d{8}
+Teléfono con espacios	        [67]\d{2}[ ]?\d{2}[ ]?\d{2}[ ]?\d{2}
+DNI	                            \d{8}-?[A-Za-z]
+Matrícula (ES) mas estricta     \d{4}\s?[BCDFGHJKLMNPRSTVWXYZ]{3}
+Email (sencillo)	            [\w.+-]+@[\w-]+\.[\w.]+
+Fecha dd/mm/aaaa	            \d{2}/\d{2}/\d{4}
+Hora hh:mm	                    ([01]\d|2[0-3]):[0-5]\d
+URL	                            https?://[^\s]+
+IPv4 (simple)	                (?:\d{1,3}\.){3}\d{1,3}
+Hashtag	                        #\w+
+Solo letras (con tildes)	    [A-Za-zÁÉÍÓÚáéíóúÑñÜü]+
+Espacios sobrantes	            \s{2,}
+Contraseña (≥8, mayús., dígito)	(?=.*[A-Z])(?=.*\d).{8,}
+Color hexadecimal	            #(?:[0-9a-fA-F]{3}){1,2}
+
+'''
