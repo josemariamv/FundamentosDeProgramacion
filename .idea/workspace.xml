@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76506e00-d99f-4317-97cd-2871a2477ce5" name="Changes" comment="pequeños  cambios en fstring">
-      <change afterPath="$PROJECT_DIR$/Clases/Primer Trimestre/pruebaGit.py" afterDir="false" />
-    </list>
+    <list default="true" id="76506e00-d99f-4317-97cd-2871a2477ce5" name="Changes" comment="pequeños  cambios en fstring" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,12 +27,12 @@
     &quot;assignee&quot;: &quot;josemariamv&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "git@github.com:josemariamv/FundamentosDeProgramacion.git",
-    "accountId": "e484806a-dbb2-4782-b0ad-73297a9841a6"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:josemariamv/FundamentosDeProgramacion.git&quot;,
+    &quot;accountId&quot;: &quot;e484806a-dbb2-4782-b0ad-73297a9841a6&quot;
   }
-}]]></component>
+}</component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
       <entry key="MS100" value="1.0" />
