@@ -3,7 +3,8 @@ import re
 # Una expresión regular no es mas que un patrón que usamos para buscar
 # coincidencias en cadenas de texto para identificar si cumplen con lo que
 # esperamos: un dni, un número de teléfono, una matrícula de coche, etc.
-
+# las cadenas de texto que empiezan por r se llaman raw-strings
+# y son las que tenemos que usar como patron de una expresión regular
 patron = r"ola"
 if re.match(patron, "ola"):
     print("Coincide")
@@ -18,7 +19,8 @@ if re.match(r"lola", texto):
 else:
     print("No coincide")
 
-# match no devuelve True, cuidado. Si lo hacemos igualando a True no funciona!
+# IMPORTANTE: match no devuelve True, cuidado. Si lo hacemos igualando a True no funciona!
+
 print(re.match(r"ola", "ola"))
 print(re.match(r"ola", "caracola"))
 
@@ -31,7 +33,6 @@ else:
 
 # match solo da por bueno si la coincidencia está al comienzo de la cadena
 # search da por bueno si la coincidencia está en cualquier lugar de la cadena
-
 # si queremos que la cadena coincida exactamente con el patrón usamos fullmatch
 
 if re.fullmatch(r"ola", "olarrr"):
