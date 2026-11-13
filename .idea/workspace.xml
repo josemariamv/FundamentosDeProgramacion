@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76506e00-d99f-4317-97cd-2871a2477ce5" name="Changes" comment="pequeños  cambios en fstring">
-      <change beforePath="$PROJECT_DIR$/Clases/expresiones regulares.py" beforeDir="false" afterPath="$PROJECT_DIR$/Clases/Primer Trimestre/expresiones regulares.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ejercicios/expresiones.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Clases/Primer Trimestre/expresiones regulares.py" beforeDir="false" afterPath="$PROJECT_DIR$/Clases/Primer Trimestre/expresiones regulares.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,23 +38,23 @@
 }</component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.000000002675579" />
-      <entry key="S5" value="1.0016095444286006" />
-      <entry key="S10" value="1.1864519119616974" />
-      <entry key="S30" value="6.424406664971692" />
-      <entry key="S60" value="14.355928673714972" />
-      <entry key="M2" value="23.358907859595345" />
-      <entry key="M5" value="35.884650528707766" />
-      <entry key="M10" value="49.56290160602167" />
-      <entry key="M15" value="59.03534339197172" />
-      <entry key="M30" value="73.92777998242441" />
-      <entry key="H1" value="84.4938328957278" />
-      <entry key="H2" value="90.82889789011627" />
-      <entry key="H4" value="94.30285730379414" />
-      <entry key="D1" value="97.36766924131811" />
-      <entry key="W1" value="97.909263113405" />
+      <entry key="MS100" value="1.0026160910539688" />
+      <entry key="MS500" value="1.4333156704695647" />
+      <entry key="S2" value="3.0495643338311273" />
+      <entry key="S5" value="4.768204498708707" />
+      <entry key="S10" value="7.372222668216044" />
+      <entry key="S30" value="17.119024849647115" />
+      <entry key="S60" value="30.610874751569373" />
+      <entry key="M2" value="56.37169833368986" />
+      <entry key="M5" value="114.01552419416994" />
+      <entry key="M10" value="163.60564139926524" />
+      <entry key="M15" value="190.61047017392963" />
+      <entry key="M30" value="228.578251576066" />
+      <entry key="H1" value="254.06797272392168" />
+      <entry key="H2" value="269.0971369897374" />
+      <entry key="H4" value="277.29524677006185" />
+      <entry key="D1" value="284.5122597896019" />
+      <entry key="W1" value="285.78653679711454" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -75,23 +76,23 @@
       <entry key="W1" value="0.0" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.8467453123625271" />
-      <entry key="MS500" value="0.9672763296139321" />
-      <entry key="S2" value="0.991716733408267" />
-      <entry key="S5" value="0.9982862785233041" />
-      <entry key="S10" value="1.184674065051221" />
-      <entry key="S30" value="6.4224938796756295" />
-      <entry key="S60" value="14.353312785266393" />
-      <entry key="M2" value="23.35517496740624" />
-      <entry key="M5" value="35.87827375298348" />
-      <entry key="M10" value="49.553187783603676" />
-      <entry key="M15" value="59.02515733359611" />
-      <entry key="M30" value="73.91953378028121" />
-      <entry key="H1" value="84.48854138849674" />
-      <entry key="H2" value="90.82589527170738" />
-      <entry key="H4" value="94.3012572992403" />
-      <entry key="D1" value="97.36738798816131" />
-      <entry key="W1" value="97.9092225652025" />
+      <entry key="MS100" value="0.9549957161513033" />
+      <entry key="MS500" value="1.414505872396996" />
+      <entry key="S2" value="3.0364812448880607" />
+      <entry key="S5" value="4.759588417223625" />
+      <entry key="S10" value="7.365489534186581" />
+      <entry key="S30" value="17.113629046193797" />
+      <entry key="S60" value="30.605505652372248" />
+      <entry key="M2" value="56.365565634935244" />
+      <entry key="M5" value="114.00827769156726" />
+      <entry key="M10" value="163.5966216091604" />
+      <entry key="M15" value="190.60087977866166" />
+      <entry key="M30" value="228.56993251218793" />
+      <entry key="H1" value="254.06234331249306" />
+      <entry key="H2" value="269.0938435526005" />
+      <entry key="H4" value="277.29346317232756" />
+      <entry key="D1" value="284.5119418697135" />
+      <entry key="W1" value="285.7864908514159" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -103,33 +104,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.conversiones.executor": "Run",
-    "Python.expresiones regulares.executor": "Run",
-    "Python.fstrings.executor": "Run",
-    "Python.pruebas.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "master",
-    "junie.onboarding.icon.badge.shown": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.jshint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.jshint": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "python.packages.toolwindow.project.migrated.to.right.top.v2": "true",
-    "to.speed.mode.migration.done": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.conversiones.executor&quot;: &quot;Run&quot;,
+    &quot;Python.expresiones regulares.executor&quot;: &quot;Run&quot;,
+    &quot;Python.fstrings.executor&quot;: &quot;Run&quot;,
+    &quot;Python.pruebas.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;python.packages.toolwindow.project.migrated.to.right.top.v2&quot;: &quot;true&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Ejercicios" />
       <recent name="$PROJECT_DIR$/Clases/Primer Trimestre" />
       <recent name="$PROJECT_DIR$/Clases/Tercer Trimestre" />
       <recent name="$PROJECT_DIR$/Clases" />

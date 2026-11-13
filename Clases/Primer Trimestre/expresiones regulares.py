@@ -84,22 +84,22 @@ else:
 '''
 OTROS PATRONES ÚTILES:
 
-Entero	                        -?\d+
-Decimal	                        -?\d+(?:[.,]\d+)?
-Código postal (ES)	            \d{5}
-Teléfono móvil (ES)	            [67]\d{8}
-Teléfono con espacios	        [67]\d{2}[ ]?\d{2}[ ]?\d{2}[ ]?\d{2}
-DNI	                            \d{8}-?[A-Za-z]
-Matrícula (ES) mas estricta     \d{4}\s?[BCDFGHJKLMNPRSTVWXYZ]{3}
-Email (sencillo)	            [\w.+-]+@[\w-]+\.[\w.]+
-Fecha dd/mm/aaaa	            \d{2}/\d{2}/\d{4}
-Hora hh:mm	                    ([01]\d|2[0-3]):[0-5]\d
-URL	                            https?://[^\s]+
-IPv4 (simple)	                (?:\d{1,3}\.){3}\d{1,3}
-Hashtag	                        #\w+
-Solo letras (con tildes)	    [A-Za-zÁÉÍÓÚáéíóúÑñÜü]+
-Espacios sobrantes	            \s{2,}
-Contraseña (≥8, mayús., dígito)	(?=.*[A-Z])(?=.*\d).{8,}
-Color hexadecimal	            #(?:[0-9a-fA-F]{3}){1,2}
+r"-?\d+"                                    # valida un entero de cualquier longitud (un dígito mínimo)
+r"-?\d+(?:[.,]\d+)?"                        # valida un número con decimales (usando tanto el punto como la coma)
+r"\d{5}"                                    # código postal español
+r"[67]\d{8}"                                # teléfono mófil español
+r"[67]\d{2}[ ]?\d{2}[ ]?\d{2}[ ]?\d{2}"     # teléfono móvil con espacios como separador
+r"\d{8}-?[A-Za-z]"                          # DNI
+r"\d{4}\s?[BCDFGHJKLMNPRSTVWXYZ]{3}"        # matrícula actual española
+r"[\w.+-]+@[\w-]+\.[\w.]+"                  # email (no muy estricto)
+r"\d{2}/\d{2}/\d{4}"                        # fecha en formato dd/mm/yyyy
+r"([01]\d|2[0-3]):[0-5]\d""                 # hora en formato hh:mm
+r"https?://[^\s]+"                          # URL de Internet
+r"(?:\d{1,3}\.){3}\d{1,3}"                  # IPv4 (no muy estricto)
+r"#\w+"                                     # hashtag
+r"[A-Za-zÁÉÍÓÚáéíóúÑñÜü]+"                  # sólo letras. cualquier combinación. mayúsculas, minúsculas y con tildes
+r"\s{2,}"                                   # detecta espacios de mas (2 mínimo, cualquier cantidad)
+r"(?=.*[A-Z])(?=.*\d).{8,}"                 # Contraseña de mas de ocho caractéres que incluya mayúsuclas y dígitos
+r"#(?:[0-9a-fA-F]{3}){1,2}"                 # color en formato hexadecimal
 
 '''
