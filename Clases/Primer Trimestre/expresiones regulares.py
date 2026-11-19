@@ -5,6 +5,35 @@ import re
 # esperamos: un dni, un número de teléfono, una matrícula de coche, etc.
 # las cadenas de texto que empiezan por r se llaman raw-strings
 # y son las que tenemos que usar como patron de una expresión regular
+
+'''
+ Las reglas básicas
+  
+ a		- El caracter a y ningún otro
+ a.c 		- El punto valida cualquier caracter (abc, a3c...)
+ [abc] 	- Uno de los caracteres (a, b o c)
+ [a-z]	- Un caracter en el rango indicado (a, p, x...) siguen la tabla ascci (la ñ no está incluida)
+ [^aeiou]	- Cualquiera excepto estos (1, n, P...)
+ \\d		- Un dígito cualquiera
+ \\w		- Una letra, un dígito o el signo de subrayado _
+ \\s		- Un espacio, un tabulador o un salto de línea
+ NOTA: Las barras hay que duplicarlas ya que van en un String
+  
+ CARDINALIDAD:
+  *		- 0 o mas veces
+  +		- 1 o mas veces
+  ? 		- 0 o 1 vez
+  {n}		- exactamente n veces
+  {n,m}	- entre n y m veces (ambas incluidas
+  {n,}		- n o mas veces
+  ^Hola	- Valida la cadena Hola si está al inicio
+  mundo$	- Valida la cadena mundo si está al final
+  a|b		- Alternativa (o a o b)
+  
+  Todas estas reglas se pueden combinar entre si
+  Cuidado que el acento ^ significa cosas diferentes si va dentro de un corchete o no
+ '''
+
 patron = r"ola"
 if re.match(patron, "ola"):
     print("Coincide")
@@ -43,6 +72,11 @@ else:
 # Las expresiones regulares siguen las mismas reglas que en cualquier otro
 # lenguaje. Veamos algunos ejemplos
 
+if re.fullmatch(r"a.c", "abc"):
+    print("Cadena de tres caracteres que empieza por a, termina por c y tiene otro cualquiera enmendio")
+else:
+    print("No cumple la condición descrita")
+
 if re.fullmatch(r"[0-9]{8}[A-Za-z]", "28999777X"):
     print("Es un DNI válido")
 else:
@@ -80,26 +114,25 @@ if re.fullmatch(r"(?!HO)[A-Z]{2}", "XO"):
 else:
     print("No son dos caracteres en mayúsculas o es HO")
 
-
 '''
 OTROS PATRONES ÚTILES:
 
-r"-?\d+"                                    # valida un entero de cualquier longitud (un dígito mínimo)
-r"-?\d+(?:[.,]\d+)?"                        # valida un número con decimales (usando tanto el punto como la coma)
-r"\d{5}"                                    # código postal español
-r"[67]\d{8}"                                # teléfono mófil español
-r"[67]\d{2}[ ]?\d{2}[ ]?\d{2}[ ]?\d{2}"     # teléfono móvil con espacios como separador
-r"\d{8}-?[A-Za-z]"                          # DNI
-r"\d{4}\s?[BCDFGHJKLMNPRSTVWXYZ]{3}"        # matrícula actual española
-r"[\w.+-]+@[\w-]+\.[\w.]+"                  # email (no muy estricto)
-r"\d{2}/\d{2}/\d{4}"                        # fecha en formato dd/mm/yyyy
-r"([01]\d|2[0-3]):[0-5]\d""                 # hora en formato hh:mm
-r"https?://[^\s]+"                          # URL de Internet
-r"(?:\d{1,3}\.){3}\d{1,3}"                  # IPv4 (no muy estricto)
-r"#\w+"                                     # hashtag
+r"-?\\d+"                                    # valida un entero de cualquier longitud (un dígito mínimo)
+r"-?\\d+(?:[.,]\\d+)?"                        # valida un número con decimales (usando tanto el punto como la coma)
+r"\\d{5}"                                    # código postal español
+r"[67]\\d{8}"                                # teléfono mófil español
+r"[67]\\d{2}[ ]?\\d{2}[ ]?\\d{2}[ ]?\\d{2}"     # teléfono móvil con espacios como separador
+r"\\d{8}-?[A-Za-z]"                          # DNI
+r"\\d{4}\\s?[BCDFGHJKLMNPRSTVWXYZ]{3}"        # matrícula actual española
+r"[\\w.+-]+@[\\w-]+\\.[\\w.]+"                  # email (no muy estricto)
+r"\\d{2}/\\d{2}/\\d{4}"                        # fecha en formato dd/mm/yyyy
+r"([01]\\d|2[0-3]):[0-5]\\d""                 # hora en formato hh:mm
+r"https?://[^\\s]+"                          # URL de Internet
+r"(?:\\d{1,3}\\.){3}\\d{1,3}"                  # IPv4 (no muy estricto)
+r"#\\w+"                                     # hashtag
 r"[A-Za-zÁÉÍÓÚáéíóúÑñÜü]+"                  # sólo letras. cualquier combinación. mayúsculas, minúsculas y con tildes
-r"\s{2,}"                                   # detecta espacios de mas (2 mínimo, cualquier cantidad)
-r"(?=.*[A-Z])(?=.*\d).{8,}"                 # Contraseña de mas de ocho caractéres que incluya mayúsuclas y dígitos
+r"\\s{2,}"                                   # detecta espacios de mas (2 mínimo, cualquier cantidad)
+r"(?=.*[A-Z])(?=.*\\d).{8,}"                 # Contraseña de mas de ocho caractéres que incluya mayúsuclas y dígitos
 r"#(?:[0-9a-fA-F]{3}){1,2}"                 # color en formato hexadecimal
 
 '''
