@@ -8,10 +8,10 @@ import re
 
 # Las reglas básicas
 
-# a		- El caracter a y ningún otro
-# .c 		- El punto valida cualquier caracter (abc, a3c...)
+# a		    - El caracter a y ningún otro
+# a.c 		- El punto valida cualquier caracter (abc, a3c...)
 # [abc] 	- Uno de los caracteres (a, b o c)
-# [a-z]	- Un caracter en el rango indicado (a, p, x...) siguen la tabla ascci (la ñ no está incluida)
+# [a-z]	    - Un caracter en el rango indicado (a, p, x...) siguen la tabla ascci (la ñ no está incluida)
 # [^aeiou]	- Cualquiera excepto estos (1, n, P...). El signo ^ tiene que ir el primero después del corchete
 # \d		- Un dígito cualquiera
 # \w		- Una letra, un dígito o el signo de subrayado _
