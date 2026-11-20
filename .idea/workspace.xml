@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76506e00-d99f-4317-97cd-2871a2477ce5" name="Changes" comment="pequeños  cambios en fstring">
-      <change afterPath="$PROJECT_DIR$/Ejercicios/expresiones.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clases/Primer Trimestre/expresiones regulares.py" beforeDir="false" afterPath="$PROJECT_DIR$/Clases/Primer Trimestre/expresiones regulares.py" afterDir="false" />
+    <list default="true" id="76506e00-d99f-4317-97cd-2871a2477ce5" name="Changes" comment="expresiones regulares">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +21,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -30,31 +28,31 @@
     &quot;assignee&quot;: &quot;josemariamv&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;git@github.com:josemariamv/FundamentosDeProgramacion.git&quot;,
-    &quot;accountId&quot;: &quot;e484806a-dbb2-4782-b0ad-73297a9841a6&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "git@github.com:josemariamv/FundamentosDeProgramacion.git",
+    "accountId": "1ab88c0c-43e6-4432-b95e-483e39da8aaa"
   }
-}</component>
+}]]></component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0026160910539688" />
-      <entry key="MS500" value="1.4333156704695647" />
-      <entry key="S2" value="3.0495643338311273" />
-      <entry key="S5" value="4.768204498708707" />
-      <entry key="S10" value="7.372222668216044" />
-      <entry key="S30" value="17.119024849647115" />
-      <entry key="S60" value="30.610874751569373" />
-      <entry key="M2" value="56.37169833368986" />
-      <entry key="M5" value="114.01552419416994" />
-      <entry key="M10" value="163.60564139926524" />
-      <entry key="M15" value="190.61047017392963" />
-      <entry key="M30" value="228.578251576066" />
-      <entry key="H1" value="254.06797272392168" />
-      <entry key="H2" value="269.0971369897374" />
-      <entry key="H4" value="277.29524677006185" />
-      <entry key="D1" value="284.5122597896019" />
-      <entry key="W1" value="285.78653679711454" />
+      <entry key="MS100" value="1.0156250010627015" />
+      <entry key="MS500" value="1.4631925932513943" />
+      <entry key="S2" value="2.664928350399767" />
+      <entry key="S5" value="3.7140303707620044" />
+      <entry key="S10" value="4.274459619817652" />
+      <entry key="S30" value="4.741068571734533" />
+      <entry key="S60" value="5.439150665930032" />
+      <entry key="M2" value="13.537742370590024" />
+      <entry key="M5" value="64.5536659690072" />
+      <entry key="M10" value="134.73888921658678" />
+      <entry key="M15" value="178.77231349959487" />
+      <entry key="M30" value="244.43652515996877" />
+      <entry key="H1" value="290.19912299715565" />
+      <entry key="H2" value="317.68505446076944" />
+      <entry key="H4" value="332.8217432402834" />
+      <entry key="D1" value="346.22735432180474" />
+      <entry key="W1" value="348.6019859377807" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -76,23 +74,23 @@
       <entry key="W1" value="0.0" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9549957161513033" />
-      <entry key="MS500" value="1.414505872396996" />
-      <entry key="S2" value="3.0364812448880607" />
-      <entry key="S5" value="4.759588417223625" />
-      <entry key="S10" value="7.365489534186581" />
-      <entry key="S30" value="17.113629046193797" />
-      <entry key="S60" value="30.605505652372248" />
-      <entry key="M2" value="56.365565634935244" />
-      <entry key="M5" value="114.00827769156726" />
-      <entry key="M10" value="163.5966216091604" />
-      <entry key="M15" value="190.60087977866166" />
-      <entry key="M30" value="228.56993251218793" />
-      <entry key="H1" value="254.06234331249306" />
-      <entry key="H2" value="269.0938435526005" />
-      <entry key="H4" value="277.29346317232756" />
-      <entry key="D1" value="284.5119418697135" />
-      <entry key="W1" value="285.7864908514159" />
+      <entry key="MS100" value="0.9265908359120021" />
+      <entry key="MS500" value="1.0817324296029753" />
+      <entry key="S2" value="2.2887742585432984" />
+      <entry key="S5" value="3.4919908438124065" />
+      <entry key="S10" value="4.1463338784125945" />
+      <entry key="S30" value="4.6938730780646445" />
+      <entry key="S60" value="5.414142777025657" />
+      <entry key="M2" value="13.520820177480656" />
+      <entry key="M5" value="64.53910624752957" />
+      <entry key="M10" value="134.72538006083028" />
+      <entry key="M15" value="178.75945249857674" />
+      <entry key="M30" value="244.426093924461" />
+      <entry key="H1" value="290.1921211697975" />
+      <entry key="H2" value="317.6809458113558" />
+      <entry key="H4" value="332.8195109269473" />
+      <entry key="D1" value="346.22695499517334" />
+      <entry key="W1" value="348.6019281872948" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -140,7 +138,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-34611be1ca5a-e0583fc556d1-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-263.7307.206" />
+        <option value="bundled-python-sdk-9e1d95ea72ba-e0583fc556d1-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-263.7307.329" />
       </set>
     </attachedChunks>
   </component>
@@ -201,7 +199,15 @@
       <option name="project" value="LOCAL" />
       <updated>1793865454845</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="expresiones regulares">
+      <option name="closed" value="true" />
+      <created>1795164126693</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1795164126699</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,7 +217,8 @@
     <MESSAGE value="cambios" />
     <MESSAGE value="estructuración por trimestre" />
     <MESSAGE value="pequeños  cambios en fstring" />
-    <option name="LAST_COMMIT_MESSAGE" value="pequeños  cambios en fstring" />
+    <MESSAGE value="expresiones regulares" />
+    <option name="LAST_COMMIT_MESSAGE" value="expresiones regulares" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/FundamentosDeProgramacion$introduccion.coverage" NAME="introduccion Coverage Results" MODIFIED="1789036762631" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
