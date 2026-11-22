@@ -6,19 +6,18 @@ import re
 # las cadenas de texto que empiezan por r se llaman raw-strings
 # y son las que tenemos que usar como patron de una expresión regular
 
-'''
- Las reglas básicas
-  
- a		- El caracter a y ningún otro
- a.c 		- El punto valida cualquier caracter (abc, a3c...)
- [abc] 	- Uno de los caracteres (a, b o c)
- [a-z]	- Un caracter en el rango indicado (a, p, x...) siguen la tabla ascci (la ñ no está incluida)
- [^aeiou]	- Cualquiera excepto estos (1, n, P...)
- \\d		- Un dígito cualquiera
- \\w		- Una letra, un dígito o el signo de subrayado _
- \\s		- Un espacio, un tabulador o un salto de línea
- NOTA: Las barras hay que duplicarlas ya que van en un String
-  
+# Las reglas básicas
+
+# a		    - El caracter a y ningún otro
+# a.c 		- El punto valida cualquier caracter (abc, a3c...)
+# [abc] 	- Uno de los caracteres (a, b o c)
+# [a-z]	    - Un caracter en el rango indicado (a, p, x...) siguen la tabla ascci (la ñ no está incluida)
+# [^aeiou]	- Cualquiera excepto estos (1, n, P...). El signo ^ tiene que ir el primero después del corchete
+# \d		- Un dígito cualquiera
+# \w		- Una letra, un dígito o el signo de subrayado _
+# \W        - cualquiera que no esté incluido en el anterior: símbolos que no sean el _, espacios, etc.
+# \s		- Un espacio, un tabulador o un salto de línea
+'''  
  CARDINALIDAD:
   *		- 0 o mas veces
   +		- 1 o mas veces
@@ -32,7 +31,9 @@ import re
   
   Todas estas reglas se pueden combinar entre si
   Cuidado que el acento ^ significa cosas diferentes si va dentro de un corchete o no
- '''
+'''
+# MUY IMPORTANTE!!!!!!!!!!!!
+# En los raw strings la barra invertida (\) no es un símbolo especial y por tanto no se duplica como en Java
 
 patron = r"ola"
 if re.match(patron, "ola"):
@@ -114,25 +115,23 @@ if re.fullmatch(r"(?!HO)[A-Z]{2}", "XO"):
 else:
     print("No son dos caracteres en mayúsculas o es HO")
 
-'''
-OTROS PATRONES ÚTILES:
 
-r"-?\\d+"                                    # valida un entero de cualquier longitud (un dígito mínimo)
-r"-?\\d+(?:[.,]\\d+)?"                        # valida un número con decimales (usando tanto el punto como la coma)
-r"\\d{5}"                                    # código postal español
-r"[67]\\d{8}"                                # teléfono mófil español
-r"[67]\\d{2}[ ]?\\d{2}[ ]?\\d{2}[ ]?\\d{2}"     # teléfono móvil con espacios como separador
-r"\\d{8}-?[A-Za-z]"                          # DNI
-r"\\d{4}\\s?[BCDFGHJKLMNPRSTVWXYZ]{3}"        # matrícula actual española
-r"[\\w.+-]+@[\\w-]+\\.[\\w.]+"                  # email (no muy estricto)
-r"\\d{2}/\\d{2}/\\d{4}"                        # fecha en formato dd/mm/yyyy
-r"([01]\\d|2[0-3]):[0-5]\\d""                 # hora en formato hh:mm
-r"https?://[^\\s]+"                          # URL de Internet
-r"(?:\\d{1,3}\\.){3}\\d{1,3}"                  # IPv4 (no muy estricto)
-r"#\\w+"                                     # hashtag
-r"[A-Za-zÁÉÍÓÚáéíóúÑñÜü]+"                  # sólo letras. cualquier combinación. mayúsculas, minúsculas y con tildes
-r"\\s{2,}"                                   # detecta espacios de mas (2 mínimo, cualquier cantidad)
-r"(?=.*[A-Z])(?=.*\\d).{8,}"                 # Contraseña de mas de ocho caractéres que incluya mayúsuclas y dígitos
-r"#(?:[0-9a-fA-F]{3}){1,2}"                 # color en formato hexadecimal
+# OTROS PATRONES ÚTILES:
 
-'''
+# r"-?\d+"                                    # valida un entero de cualquier longitud (un dígito mínimo)
+# r"-?\d+(?:[.,]\d+)?"                        # valida un número con decimales (usando tanto el punto como la coma)
+# r"\d{5}"                                    # código postal español
+# r"[67]\d{8}"                                # teléfono mófil español
+# r"[67]\d{2}[ ]?\d{2}[ ]?\d{2}[ ]?\d{2}"     # teléfono móvil con espacios como separador
+# r"\d{8}-?[A-Za-z]"                          # DNI
+# r"\d{4}\s?[BCDFGHJKLMNPRSTVWXYZ]{3}"        # matrícula actual española
+# r"[\w.+-]+@[\w-]+\.[\w.]+"                  # email (no muy estricto)
+# r"\d{2}/\d{2}/\d{4}"                        # fecha en formato dd/mm/yyyy
+# r"([01]\d|2[0-3]):[0-5]\d""                 # hora en formato hh:mm
+# r"https?://[^\s]+"                          # URL de Internet
+# r"(?:\d{1,3}\.){3}\d{1,3}"                  # IPv4 (no muy estricto)
+# r"#\w+"                                     # hashtag
+# r"[A-Za-zÁÉÍÓÚáéíóúÑñÜü]+"                  # sólo letras. cualquier combinación. mayúsculas, minúsculas y con tildes
+# r"\s{2,}"                                   # detecta espacios de mas (2 mínimo, cualquier cantidad)
+# r"(?=.*[A-Z])(?=.*\d).{8,}"                 # Contraseña de mas de ocho caractéres que incluya mayúsuclas y dígitos
+# r"#(?:[0-9a-fA-F]{3}){1,2}"                 # color en formato hexadecimal
