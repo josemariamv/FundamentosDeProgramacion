@@ -103,7 +103,6 @@ if re.fullmatch(r"(\w+)", "ban_derola9"):
 else:
     print("No es válido")
 
-
 if re.fullmatch(r"[^579]", "7"):
     print("Cualquier cosa que no sea un 5, un 7 o un 9")
 else:
