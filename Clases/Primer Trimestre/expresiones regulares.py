@@ -115,7 +115,6 @@ if re.fullmatch(r"(?!HO)[A-Z]{2}", "XO"):
 else:
     print("No son dos caracteres en mayúsculas o es HO")
 
-
 # OTROS PATRONES ÚTILES:
 
 # r"-?\d+"                                    # valida un entero de cualquier longitud (un dígito mínimo)
