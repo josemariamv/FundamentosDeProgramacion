@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76506e00-d99f-4317-97cd-2871a2477ce5" name="Changes" comment="pequeños  cambios en fstring" />
+    <list default="true" id="76506e00-d99f-4317-97cd-2871a2477ce5" name="Changes" comment="expresiones regulares">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,7 +20,11 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -30,28 +36,28 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;git@github.com:josemariamv/FundamentosDeProgramacion.git&quot;,
-    &quot;accountId&quot;: &quot;e484806a-dbb2-4782-b0ad-73297a9841a6&quot;
+    &quot;accountId&quot;: &quot;1ab88c0c-43e6-4432-b95e-483e39da8aaa&quot;
   }
 }</component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0000566329026166" />
-      <entry key="S2" value="1.0867562445115106" />
-      <entry key="S5" value="1.405950103361107" />
-      <entry key="S10" value="2.3669549120896374" />
-      <entry key="S30" value="12.865069860152243" />
-      <entry key="S60" value="29.62838825988942" />
-      <entry key="M2" value="58.760495423659606" />
-      <entry key="M5" value="127.84783496785487" />
-      <entry key="M10" value="194.7646432997409" />
-      <entry key="M15" value="232.52119991640322" />
-      <entry key="M30" value="286.15907677457074" />
-      <entry key="H1" value="322.3864645550752" />
-      <entry key="H2" value="343.82180470551236" />
-      <entry key="H4" value="355.5389422919507" />
-      <entry key="D1" value="365.86879068364715" />
-      <entry key="W1" value="367.694173116967" />
+      <entry key="MS100" value="1.034491096747122" />
+      <entry key="MS500" value="1.7438685854831983" />
+      <entry key="S2" value="3.2502678639983587" />
+      <entry key="S5" value="4.471082397545528" />
+      <entry key="S10" value="5.132291547715276" />
+      <entry key="S30" value="5.687912339733388" />
+      <entry key="S60" value="6.408573198785583" />
+      <entry key="M2" value="14.499635934652886" />
+      <entry key="M5" value="65.48092147552194" />
+      <entry key="M10" value="135.66295026757112" />
+      <entry key="M15" value="179.70513637293647" />
+      <entry key="M30" value="245.3905949877777" />
+      <entry key="H1" value="291.17185718270457" />
+      <entry key="H2" value="318.67012997525023" />
+      <entry key="H4" value="333.81392535342127" />
+      <entry key="D1" value="347.2259988450707" />
+      <entry key="W1" value="349.60179096982586" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -73,23 +79,23 @@
       <entry key="W1" value="0.0" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9012504626108302" />
-      <entry key="MS500" value="0.9794756114259324" />
-      <entry key="S2" value="1.0810614936490914" />
-      <entry key="S5" value="1.4029271787855182" />
-      <entry key="S10" value="2.364406055322175" />
-      <entry key="S30" value="12.859609697867032" />
-      <entry key="S60" value="29.617592492977362" />
-      <entry key="M2" value="58.74515564300166" />
-      <entry key="M5" value="127.83299683627013" />
-      <entry key="M10" value="194.75110320796986" />
-      <entry key="M15" value="232.50840117567452" />
-      <entry key="M30" value="286.14887854990155" />
-      <entry key="H1" value="322.37972566750597" />
-      <entry key="H2" value="343.8178890335396" />
-      <entry key="H4" value="355.5368263232497" />
-      <entry key="D1" value="365.8684139698946" />
-      <entry key="W1" value="367.6941186825099" />
+      <entry key="MS100" value="0.06542791960027479" />
+      <entry key="MS500" value="1.0583264054954176" />
+      <entry key="S2" value="2.7770439024504516" />
+      <entry key="S5" value="4.198153701337104" />
+      <entry key="S10" value="4.975167361247023" />
+      <entry key="S30" value="5.630034128312449" />
+      <entry key="S60" value="6.378084161982536" />
+      <entry key="M2" value="14.47994654517916" />
+      <entry key="M5" value="65.465251277159" />
+      <entry key="M10" value="135.6488851247617" />
+      <entry key="M15" value="179.69190443550056" />
+      <entry key="M30" value="245.37997781007604" />
+      <entry key="H1" value="291.1647620576698" />
+      <entry key="H2" value="318.6659745399843" />
+      <entry key="H4" value="333.81166960280973" />
+      <entry key="D1" value="347.2255956050124" />
+      <entry key="W1" value="349.601732660087" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -97,9 +103,6 @@
   &quot;fromUser&quot;: false
 }</component>
   <component name="ProjectId" id="3KRjpKnjI35dymRXxChS0z2Dxc9" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -110,7 +113,6 @@
     &quot;Python.conversiones.executor&quot;: &quot;Run&quot;,
     &quot;Python.expresiones regulares.executor&quot;: &quot;Run&quot;,
     &quot;Python.fstrings.executor&quot;: &quot;Run&quot;,
-    &quot;Python.opternario.executor&quot;: &quot;Run&quot;,
     &quot;Python.pruebas.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
@@ -202,39 +204,23 @@
       <option name="project" value="LOCAL" />
       <updated>1793865454845</updated>
     </task>
-    <task id="LOCAL-00007" summary="pequeños  cambios en fstring">
+    <task id="LOCAL-00007" summary="expresiones regulares">
       <option name="closed" value="true" />
-      <created>1795345683509</created>
+      <created>1795164126693</created>
       <option name="number" value="00007" />
       <option name="presentableId" value="LOCAL-00007" />
       <option name="project" value="LOCAL" />
-      <updated>1795345683509</updated>
+      <updated>1795164126699</updated>
     </task>
-    <task id="LOCAL-00008" summary="pequeños  cambios en fstring">
+    <task id="LOCAL-00008" summary="expresiones regulares">
       <option name="closed" value="true" />
-      <created>1795345722144</created>
+      <created>1795168997700</created>
       <option name="number" value="00008" />
       <option name="presentableId" value="LOCAL-00008" />
       <option name="project" value="LOCAL" />
-      <updated>1795345722144</updated>
+      <updated>1795168997701</updated>
     </task>
-    <task id="LOCAL-00009" summary="pequeños  cambios en fstring">
-      <option name="closed" value="true" />
-      <created>1795345859858</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1795345859858</updated>
-    </task>
-    <task id="LOCAL-00010" summary="pequeños  cambios en fstring">
-      <option name="closed" value="true" />
-      <created>1795345877261</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1795345877261</updated>
-    </task>
-    <option name="localTasksCounter" value="11" />
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,7 +230,8 @@
     <MESSAGE value="cambios" />
     <MESSAGE value="estructuración por trimestre" />
     <MESSAGE value="pequeños  cambios en fstring" />
-    <option name="LAST_COMMIT_MESSAGE" value="pequeños  cambios en fstring" />
+    <MESSAGE value="expresiones regulares" />
+    <option name="LAST_COMMIT_MESSAGE" value="expresiones regulares" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/FundamentosDeProgramacion$introduccion.coverage" NAME="introduccion Coverage Results" MODIFIED="1789036762631" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
